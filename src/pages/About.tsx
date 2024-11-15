@@ -22,22 +22,21 @@ const values = [
     description: 'We stay ahead of industry trends and leverage cutting-edge technologies to give you a competitive edge.',
   },
 ];
-
 const team = [
   {
-    name: 'David Chen',
+    name: 'Diwan Mohamed Faheer',
     role: 'Founder & CEO',
-    image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+    image: 'https://static.vecteezy.com/system/resources/previews/009/292/244/non_2x/default-avatar-icon-of-social-media-user-vector.jpg',
   },
   {
-    name: 'Sarah Williams',
-    role: 'Creative Director',
-    image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+    name: 'Choies Kazi',
+    role: 'Co-Owner',
+    image: 'https://static.vecteezy.com/system/resources/previews/009/292/244/non_2x/default-avatar-icon-of-social-media-user-vector.jpg',
   },
   {
-    name: 'Michael Rodriguez',
-    role: 'Lead Developer',
-    image: 'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+    name: 'Cu3t0m',
+    role: 'UI/UX Designer',
+    image: 'https://static.vecteezy.com/system/resources/previews/009/292/244/non_2x/default-avatar-icon-of-social-media-user-vector.jpg',
   },
 ];
 
@@ -46,12 +45,10 @@ export default function About() {
     <div className="pt-16">
       {/* Hero Section */}
       <div className="relative bg-gradient-to-r from-indigo-600 to-purple-600">
-        <div className="absolute inset-0">
-          <img
-            className="w-full h-full object-cover mix-blend-multiply filter brightness-50"
-            src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&auto=format&fit=crop&w=2850&q=80"
-            alt=""
-          />
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute top-0 left-0 w-96 h-96 bg-indigo-500 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob"></div>
+          <div className="absolute top-0 right-0 w-96 h-96 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-2000"></div>
+          <div className="absolute bottom-0 left-0 w-96 h-96 bg-pink-500 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-4000"></div>
         </div>
         <div className="relative py-24 px-4 sm:px-6 lg:px-8">
           <div className="text-center">

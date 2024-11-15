@@ -3,7 +3,7 @@ import { Code, Palette, Settings, Search, Gauge, Shield, CheckCircle } from 'luc
 const packages = [
   {
     name: 'Starter',
-    price: '$5,000',
+    price: '£500',
     description: 'Perfect for small businesses',
     features: [
       'Custom Design',
@@ -16,7 +16,7 @@ const packages = [
   },
   {
     name: 'Professional',
-    price: '$12,000',
+    price: '£1,500',
     description: 'Ideal for growing companies',
     features: [
       'Everything in Starter',
@@ -32,7 +32,7 @@ const packages = [
   },
   {
     name: 'Enterprise',
-    price: 'Custom',
+    price: '£2,000',
     description: 'For large organizations',
     features: [
       'Everything in Professional',
@@ -103,13 +103,7 @@ export default function Services() {
     <div className="pt-16">
       {/* Hero Section */}
       <div className="relative bg-gradient-to-r from-purple-600 to-indigo-600">
-        <div className="absolute inset-0">
-          <img
-            className="w-full h-full object-cover mix-blend-multiply filter brightness-50"
-            src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&auto=format&fit=crop&w=2850&q=80"
-            alt=""
-          />
-        </div>
+        <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-indigo-600 opacity-50 blur-lg"></div>
         <div className="relative py-24 px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">

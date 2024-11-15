@@ -9,11 +9,12 @@ export default function ContactForm() {
     message: '',
     budget: 'medium',
   });
-
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission
-    console.log(formData);
+    const mailtoLink = `mailto:hello@blynk.design?subject=Request a Quote&body=${encodeURIComponent(
+      `Name: ${formData.name}\nEmail: ${formData.email}\nCompany: ${formData.company}\nBudget: ${formData.budget}\nMessage: ${formData.message}`
+    )}`;
+    window.location.href = mailtoLink;
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -96,9 +97,9 @@ export default function ContactForm() {
                 onChange={handleChange}
                 className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
               >
-                <option value="small">$5,000 - $10,000</option>
-                <option value="medium">$10,000 - $25,000</option>
-                <option value="large">$25,000+</option>
+                <option value="small">$500 - $1,000</option>
+                <option value="medium">$1,000 - $2,000</option>
+                <option value="large">$10,000+</option>
               </select>
             </div>
 
